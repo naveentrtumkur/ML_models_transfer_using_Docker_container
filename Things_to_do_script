@@ -1,0 +1,5 @@
+# Learned and reused face recognition by using the following tutorial: https://github.com/ageitgey/face_recognition/blob/master/README.md
+
+1. Specify a folder of images and recognize the images from them.
+
+$ face_recognition ./pictures_of_people_i_know/ ./unknown_pictures/ | cut -d ',' -f2
