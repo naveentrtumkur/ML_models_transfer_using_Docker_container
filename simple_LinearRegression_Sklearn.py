@@ -17,7 +17,7 @@ def find_accuracy(samples, reg):
     sum = 0
     print("The number of samples passed are: ",len(samples))
     # The first column is unnecessary, just drop it.
-    samples = np.delete(samples, [0], axis=1)
+  ###############  samples = np.delete(samples, [0], axis=1)
     print("samples=", samples)
     col_interst = [0, 1, 2, 3, 4, 5, 6]
     test_xvals = samples[:, col_interst]  # Just extract the interested columns from training data
@@ -81,7 +81,7 @@ print("first value=",training_data.head(5)['7'])
 #Extract the X-vals from training data
 dRow = training_data.head(5).values
 #The first column is unnecessary, just drop it.
-dRow = np.delete(dRow,[0],axis=1)
+###################dRow = np.delete(dRow,[0],axis=1)
 print("drow=",dRow)
 col_interst = [0,1,2,3,4,5,6]
 np_xvals = dRow[:,col_interst] #Just extract the interested columns from training data

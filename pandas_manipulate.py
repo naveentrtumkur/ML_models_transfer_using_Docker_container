@@ -8,10 +8,16 @@ cur_data = pd.read_csv(csvFile)
 print("Cur data=",cur_data)
 
 #Remove the first five records and write to the file again.
-cur_data = cur_data.drop(cur_data.index[:5], inplace=True)
+#cur_data = cur_data.drop(cur_data.index[:5], inplace=True)
+cur_data = cur_data.iloc[5:]
 
+
+#print("befor open",cur_data)
 with open(csvFile,'w') as file:
-    cur_data.to_csv(file,header=True)
+    #cur_data = pd.DataFrame(cur_data)
+    #print("cur_dat=",cur_data)
+    #print(df)
+    cur_data.to_csv(file,index=False)
 
 
 print("Write operation complete.. Please check the file")
