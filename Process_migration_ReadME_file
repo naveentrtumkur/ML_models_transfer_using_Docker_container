@@ -9,3 +9,20 @@ The applications or baselines to check this functionality:-
 2) Simple Multivariate Linear Regression
 -> Data Generating process
 -> Output predictor process
+
+
+
+1. Create a docker container with a specific name Ex: busyBox
+
+2. Deploy/run  sample application on top of this container
+
+3. Run the $docker logs command.
+
+4. checkpoint the status using CRIU tool
+
+5. Go to /var/lib/docker/containers/<container-ID>/checkpoints/<checkpoint name>/
+ and verfiy the checkpoint is successfully created
+
+6. Transfer these checkpoints to the new container.
+
+7. Restart the container and check that the application resumes (i.e taking logs and they match the point after teh last checkpoimnt was taken)
