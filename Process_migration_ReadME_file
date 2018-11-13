@@ -1,0 +1,11 @@
+# In order to migrate the running process and affected files, i.e from one container to destination container,
+we have a tool called CRIU.
+
+--> CRIU checkpoints saves the container instance by saving the running processes and files affected.
+--> These can be later migrated from container on machine-1 to another container on machine-1 ot machine-2, and can resume execution.
+
+The applications or baselines to check this functionality:-
+1) Simple program that prints the current hostname and Ip address
+2) Simple Multivariate Linear Regression
+-> Data Generating process
+-> Output predictor process
