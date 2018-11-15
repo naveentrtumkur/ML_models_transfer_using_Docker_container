@@ -6,8 +6,6 @@ import copy
 import pandas_manipulate
 
 
-#Step-3: Delete the data by removing them.
-
 #Step-1: Generate the data for a loop of 5 times.
 def generate_data(loop):
     #Run the generate data for a loop of specified times.
