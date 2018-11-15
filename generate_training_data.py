@@ -17,9 +17,9 @@ csvFile = "training_data.csv" #Specify the training data filename
 def append_csv_data(csvFile, pArray):
     with open(csvFile, 'a') as file:
         df = pd.DataFrame(pArray)
-        df.to_csv(file, header=True)
+        df.to_csv(file, header=True,index=False)
 count = 0
-while count < 1:
+while count < 20:
     X_Y_com = []
     for i in range(0,100):
         val = randint(0,10)
