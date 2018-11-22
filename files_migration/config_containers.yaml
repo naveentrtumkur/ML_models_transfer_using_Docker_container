@@ -1,0 +1,13 @@
+#This is a yaml file which contains the details about containers which are useful for our migrations.
+# We require continer name, container id, Filesystem to transfer (container), Filesystem in docker server,
+# docker server IP (localhost/ remote host)
+source_cont_name: 'auavLinux'
+source_container_id: '1234'
+source_container_fs: '/var/usr/naveentr/Desktop/Docker/files/source'
+source_docker_serv_fs: '/usr/var/docker/containers/destnnnn'
+souce_docker_serv_IP: '127.0.0.1'
+dest_docker_name: 'naveen_container'
+dest_container_id: '23456'
+dest_server_container_fs: '/var/usr/naveentr/Desktop/Docker/files'
+dest_docker_serv_fs: '/usr/var/docker/containers/yahooo'
+dest_docker_serv_IP : '127.0.0.1'
